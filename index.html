@@ -3,20 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Airui Meng</title>
-<style>
-  body { font-family: Georgia, 'Times New Roman', serif; max-width: 42em; margin: 4em auto; padding: 0 1em; color: #222; }
-  h1 { font-weight: normal; }
-  a { color: #2F5D7C; }
-</style>
+<meta name="description" content="Airui Meng, M.S. student in Applied Statistics at Columbia University. Research in applied econometrics and causal inference, with applications to development and labor economics, household finance, and the economics of education.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Airui Meng">
+<meta property="og:description" content="Applied econometrics and causal inference. M.S. in Applied Statistics, Columbia University.">
+<meta property="og:url" content="https://airuimeng1.github.io/">
+<meta property="og:image" content="https://airuimeng1.github.io/images/airui-meng.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324527a'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='white' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<h1>Airui Meng</h1>
-<p>MS in Applied Statistics, Teachers College, Columbia University.</p>
-<h2>Papers</h2>
-<ul>
-  <li><a href="files/AMeng_DigitalEconomy_EmploymentUpgrading.pdf">Digital Economy and Industrial Employment Upgrading in China: Evidence from Provincial Panel Data, 2013&ndash;2022</a> (master's research paper, 2026) &middot; <a href="files/AMeng_DigitalEconomy_EmploymentUpgrading_slides.pdf">slides</a></li>
-</ul>
-<p><a href="https://github.com/airuimeng1">GitHub</a> &middot; <a href="mailto:am6817@tc.columbia.edu">Email</a></p>
+<main>
+
+  <header class="intro">
+    <img src="images/airui-meng.jpg" width="480" height="600" alt="Portrait of Airui Meng">
+    <div>
+      <h1>Airui Meng</h1>
+      <p class="role">M.S. Student in Applied Statistics, Columbia University</p>
+      <p>I am a master’s student in Applied Statistics at Columbia University (expected December 2026). I hold a B.Sc. (Honors) in Economics from the University of Nottingham.</p>
+      <p>My research is in applied econometrics and causal inference: instrumental variables, regression discontinuity, panel methods, and causal machine learning, with applications to development and labor economics, household finance, and the economics of education. I plan to pursue a Ph.D. in economics.</p>
+      <ul class="contact">
+        <li><a href="mailto:am6817@tc.columbia.edu">am6817@tc.columbia.edu</a></li>
+        <li><a href="https://github.com/airuimeng1">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/airui-meng-818583300">LinkedIn</a></li>
+      </ul>
+      <p class="cv-note">Please <a href="mailto:am6817@tc.columbia.edu">contact me</a> for the most recent CV PDF.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="research">
+    <h2 id="research">Research</h2>
+
+    <h3>Working Papers</h3>
+
+    <div class="paper">
+      <a class="title" href="files/AMeng_DML_IV.pdf">Weak-Instrument Inference and Residualized Concentration in Double Machine Learning for the Partially Linear Instrumental Variables Model</a>
+      <span class="meta">(2026)</span>
+      <ul class="links">
+        <li><a href="files/AMeng_DML_IV.pdf">Paper</a></li>
+        <li><a href="files/AMeng_DMLIV_supplement.pdf">Online Appendix</a></li>
+      </ul>
+      <details>
+        <summary>Abstract</summary>
+        <p>We prove that in the partially linear instrumental-variables model, under a correctly specified treatment nuisance, prediction-optimal instrument residualization is concentration-optimal in population: flexible learning imposes no absorption cost. Absent a strong residualized first stage, an estimate collapsing toward zero with a small standard error signals lost residualized concentration, not a precise zero. We make weak-instrument-robust inference the default reporting layer, importing an i.i.d. uniform-size baseline and proving the cross-fitted Anderson–Rubin set uniformly valid under clustering, survey weights, and a fold-nested generated instrument. A four-design diagnostic portfolio, a known-truth Monte Carlo, and an exploratory selector trace realized losses to diagnosable sources.</p>
+      </details>
+    </div>
+
+    <div class="paper">
+      <a class="title" href="https://arxiv.org/abs/2608.21165">Distilling Black-Box Machine Learning into a Small, Self-Explaining Language Model for Learning Analytics</a>
+      <span class="meta">(2026), with Chenguang Pan and Youmi Suk. Under review at <i>Journal of Learning Analytics</i>.</span>
+      <ul class="links">
+        <li><a href="https://arxiv.org/abs/2608.21165">arXiv</a></li>
+      </ul>
+      <details>
+        <summary>Abstract</summary>
+        <p>Learning analytics increasingly relies on flexible machine learning (ML), but the model opacity and the burden of deployment prevent these tools from reaching educational practice. We propose a two-stage fine-tuning pipeline that distills a fitted black-box estimator and its post hoc interpretation (the mentor) into a small, open-weight large language model (LLM; the mentee) that returns an individual-level estimate and explains in natural language. The design is estimator-agnostic and paired with a faithfulness-first evaluation framework that audits every narration against the attribution it claims to describe. We design a simulation study that separates distillation loss from estimator loss by comparing an oracle mentor with a realistic ML mentor. Given an oracle signal, distillation with a two-billion-parameter LLM model is nearly lossless in recovering the effect surface (r &gt; .90), perfectly ranking the important variables, and citing no spurious covariate. Under a realistic estimator, almost all remaining error originates upstream. We find that fluency is no evidence of correctness since narration quality is independent of signal quality, and decision quality collapses toward the majority action in severely imbalanced settings. Applied to a nationally representative dataset, the pipeline recovers the finding that advanced mathematics coursework benefits students least likely to enroll in four-year college the most, with 98.8% of narrations passing the audit and no fabricated quantities. The result is a single fine-tuned LLM that predicts and explains offline on a commodity laptop, so student records never leave the machine.</p>
+      </details>
+    </div>
+
+    <h3>Theses and Other Projects</h3>
+
+    <div class="paper">
+      <a class="title" href="files/AMeng_DigitalEconomy_EmploymentUpgrading.pdf">Digital Economy and Industrial Employment Upgrading in China: Evidence from Provincial Panel Data, 2013–2022</a>
+      <span class="meta">(2026). Master’s capstone paper, Columbia University.</span>
+      <ul class="links">
+        <li><a href="files/AMeng_DigitalEconomy_EmploymentUpgrading.pdf">Paper</a></li>
+        <li><a href="files/AMeng_DigitalEconomy_EmploymentUpgrading_slides.pdf">Slides</a></li>
+        <li><a href="https://github.com/airuimeng1/digital-economy-employment-upgrading">Code</a></li>
+      </ul>
+      <details>
+        <summary>Abstract</summary>
+        <p>This study asks whether China’s digital-economy development is associated with industrial employment upgrading across 31 provinces, 2013–2022 (N = 310 province-years), using a principal-component digital-economy development index (DEDI) and two-way (province and year) fixed-effects regression. The central finding is compositional: digital development is robustly associated with upgrading within the urban-unit service sector toward higher-value advanced (information-technology, finance, scientific-research) services, an association that survives two-way fixed effects across every sample restriction and eight of the 10 control sets tested (the producer-service association is similar but weaker). By contrast, its link to the broad sectoral structure (a larger tertiary and a smaller primary share) is a between-province, secular-trend pattern. This link is strong cross-sectionally but vanishes under fixed effects. A Hausman test selects fixed effects; a multilevel growth model (descriptive) shows heterogeneous provincial trajectories. In associational terms, the digital economy appears linked less to gross sectoral reallocation than to upgrading within services—cautioning against reading the cross-sectional digital–tertiary correlation as a within-province effect.</p>
+      </details>
+    </div>
+
+    <div class="paper">
+      <a class="title" href="files/AMeng_DigitalEconomy_SkillComposition.pdf">Digital-Economy Development and the Skill Composition of Chinese Employment</a>
+      <span class="meta">(2025). Undergraduate thesis, University of Nottingham.</span>
+      <ul class="links">
+        <li><a href="files/AMeng_DigitalEconomy_SkillComposition.pdf">Paper</a></li>
+        <li><a href="https://github.com/airuimeng1/UG_thesis_code_repository">Code</a></li>
+      </ul>
+      <details>
+        <summary>Abstract</summary>
+        <p>This paper examines how the development of China’s digital economy is associated with the skill composition of employment, using panel data on 31 provincial-level administrative units (excluding Hong Kong, Macao, and Taiwan) from 2013 to 2022. Employment is divided into low-, medium-, and high-skilled shares by educational attainment. A three-dimensional index of digital infrastructure, digital industry development, and the digital economy environment is constructed with the entropy weight method (EWM) and, alternatively, principal component analysis (PCA). Two-way fixed-effects models with a centered quadratic term are estimated and checked with alternative indices, wild cluster bootstrap, and instrumental variables. The digital economy has an inverted U-shaped association with low-skilled employment: the positive association weakens as digital development rises, but the turning point lies at the upper edge of the data, so later-stage job substitution is a projection. It has a U-shaped association with high-skilled employment, but the upward segment, observed only in Guangdong, is not statistically confirmed. No significant association is found for medium-skilled employment, possibly because automation substitution and the creation of new jobs offset each other. The positive association with low-skilled employment is significantly weaker in coastal than in inland provinces. The nonlinear results are robust to the composition of the index and to equal weighting but not to conventional entropy weights, and the high-skilled curvature survives neither excluding Guangdong nor using log-ratio outcomes; the instrumental-variable estimates do not support a causal interpretation. The findings suggest strengthening digital skills training and promoting regionally coordinated development to facilitate inclusive growth.</p>
+      </details>
+    </div>
+
+    <div class="paper">
+      <a class="title" href="files/AMeng_RER_GDP.pdf">The Impact of the Real Exchange Rate on Economic Growth: A Comparative Study of OECD and Non-OECD Countries</a>
+      <span class="meta">(2024), with Yuxi Chen, Jinhui Hao, Zhaofeng Fan, and Xuhan Gou.</span>
+      <ul class="links">
+        <li><a href="files/AMeng_RER_GDP.pdf">Paper</a></li>
+      </ul>
+      <details>
+        <summary>Abstract</summary>
+        <p>This study examines the relationship between the real exchange rate (RER) and economic growth in OECD and non-OECD countries using panel regression and time-series analyses. The panel estimates indicate a U-shaped relationship for OECD countries and an inverted U-shaped relationship for non-OECD countries. Complementary vector autoregression (VAR) analyses of China and Japan provide country-level evidence on the dynamic relationship. The results suggest that the growth effects of currency appreciation and depreciation depend on a country’s level of development and economic structure. Moderate exchange-rate movements may support growth, whereas excessive appreciation can weaken export competitiveness and excessive depreciation can increase inflation and reduce purchasing power. The findings underscore the importance of country-specific characteristics and exchange-rate regimes when designing policies to support sustainable economic growth.</p>
+      </details>
+    </div>
+  </section>
+
+  <section aria-labelledby="experience">
+    <h2 id="experience">Research Experience</h2>
+    <ul class="entries">
+      <li><b>Research Assistant to Youmi Suk</b>, Columbia University <span class="when">(2026–present)</span>. Regression-discontinuity designs with functional outcomes. <a href="https://youmilab.ai">Youmi Lab</a></li>
+      <li><b>Research Assistant to Chang Liu</b>, University of Nottingham Ningbo China <span class="when">(2025)</span>. Household survey data (China Family Panel Studies) for Li, Wen, Qiu, and Liu (2026), <i>Tourism Management</i>. <a href="https://doi.org/10.1016/j.tourman.2025.105381">Article</a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="teaching">
+    <h2 id="teaching">Teaching</h2>
+    <p class="sub">Teaching Assistant, Columbia University</p>
+    <ul class="entries">
+      <li>HUDM 5122 Applied Regression Analysis, for Youmi Suk <span class="when">(Spring 2026)</span>. Nominated for the Morton T. Embree Award for Outstanding Contribution to Student Learning.</li>
+      <li>HUDM 4120 Basic Concepts in Statistics, for Young-Sun Lee <span class="when">(Summer and Fall 2026)</span></li>
+      <li>HUDM 4122 Probability and Statistical Inference, for Young-Sun Lee <span class="when">(Summer and Fall 2026)</span></li>
+    </ul>
+  </section>
+
+  <footer>Last updated October 2026</footer>
+
+</main>
 </body>
 </html>
